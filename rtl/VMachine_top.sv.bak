@@ -1,0 +1,27 @@
+module VMachine_top(
+    input clk,
+	 input rmb1,   //投币,key[0]
+	 input [7:0] choice,	 //选择商品
+	 input ok,          //确认key[3]
+	 
+	 
+	 input [1:0] keys,
+	 
+    output wire [13:0] sevenrmb1 ,//7段数码管显示投币额度 HEX[7]、HEX[6]
+    output wire [13:0] sevenconsume, //消费额	 HEX[4]、HEX[5]
+	 output wire [13:0] change,  //找零 HEX[0]
+	 output [7:0]  led //货物灯
+);
+
+VMachine VMachine_top(
+    .clk(clk),
+	 .rmb1(rmb1),
+	 .choice(choice),
+	 .ok(ok),
+	 .keys(keys),
+	 .sevenrmb1(sevenrmb1),
+	 .sevenconsume(sevenconsume),
+	 .change(change),
+	 .led(led)	 
+);
+endmodule

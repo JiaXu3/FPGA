@@ -1,0 +1,21 @@
+module cnt(
+clk  ,
+rst  ,
+cnt  
+);
+ 
+input              clk  ;
+input              rst  ;
+ 
+output  reg [3:0]  cnt  ;
+ 
+always@(posedge clk or negedge rst)
+begin
+    if (!rst)
+     cnt <= 0;
+    else if (cnt == 4'd15)
+     cnt <= 0;
+    else
+     cnt <= cnt + 1'b1;
+end
+endmodule

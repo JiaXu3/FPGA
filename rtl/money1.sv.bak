@@ -1,0 +1,25 @@
+module money1(input rmb1,
+              input clk,
+				  input reset,
+				  output [4:0] a);
+				  typedef enum logic [4:0] {S0=5'd0,S1=5'd1,S2=5'd2,S3=5'd3,S4=5'd4}statetype;
+statetype state,nextstate;				 
+always_ff@(posedge clk,posedge reset)
+    if(reset) state <= S0;
+	 else  state <= nextstate;
+	 
+always_comb
+    case(state)
+	   S0: if(rmb1) nextstate = S1;
+		    else     nextstate = S0;
+	   S1: if(rmb1) nextstate = S2;
+		    else     nextstate = S2;
+		S2: if(rmb1) nextstate = S3;
+		    else     nextstate = S2;
+		S3: if(rmb1) nextstate = S4;
+		    else     nextstate = S3;
+		S4: if(rmb1) nextstate = S4;
+		    else     nextstate = S4;
+		default: nextstate = S0;
+		endcase
+assign a = state;

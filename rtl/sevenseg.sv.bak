@@ -1,0 +1,40 @@
+//5-14译码器
+module sevenseg(input logic [4:0] data,
+                output logic [13:0] segments);
+always_comb
+   case(data)
+	0:    segments = 14'b111_1111_100_0000;
+	1:    segments = 14'b111_1111_111_1001;
+	2:    segments = 14'b111_1111_010_0100;
+	3:    segments = 14'b111_1111_011_0000;
+	4:    segments = 14'b111_1111_001_1001;
+	5:    segments = 14'b111_1111_001_0010;
+	6:    segments = 14'b111_1111_000_0010;
+	7:    segments = 14'b111_1111_111_1000;
+	8:    segments = 14'b111_1111_000_0000;
+	9:    segments = 14'b111_1111_001_0000;
+	10:   segments = 14'b111_1001_100_0000;
+	11:   segments = 14'b111_1001_111_1001;
+	12:   segments = 14'b111_1001_010_0100;
+	13:   segments = 14'b111_1001_011_0000;
+	14:   segments = 14'b111_1001_001_1001;
+	15:   segments = 14'b111_1001_001_0010;
+	16:   segments = 14'b111_1001_000_0010;
+	17:   segments = 14'b111_1001_111_1000;
+	18:   segments = 14'b111_1001_000_0000;
+	19:   segments = 14'b111_1001_001_0000;
+	20:   segments = 14'b010_0100_100_0000;
+	21:   segments = 14'b010_0100_111_1001;
+	22:   segments = 14'b010_0100_010_0100;
+	23:   segments = 14'b010_0100_011_0000;
+	24:   segments = 14'b010_0100_001_1001;
+	25:   segments = 14'b010_0100_001_0010;
+	26:   segments = 14'b010_0100_000_0010;
+	27:   segments = 14'b010_0100_111_1000;
+	28:   segments = 14'b010_0100_000_0000;
+	29:   segments = 14'b010_0100_001_0000;
+	30:   segments = 14'b010_0100_100_0000;
+	31:   segments = 14'b010_0100_111_1001;
+	default:segments = 14'b000_0000_000_0000;
+   endcase
+endmodule

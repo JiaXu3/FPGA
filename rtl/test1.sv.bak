@@ -1,0 +1,5 @@
+module test1(input logic [3:0] y
+             output logic [6:0] segments);
+
+assign y = 4'b0110;				 
+sevenseg sevenseg0(y,segments);

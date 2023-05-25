@@ -1,0 +1,24 @@
+module test1(
+             input clk,
+             input logic ok,
+				 input rmb1,rmb5,rmb10,
+				 input logic reset1, //币数复位
+				 input logic [5:0] reset,   //商品增加到最大
+             input logic [5:0] commodity, //商品
+             input logic s,               //数码管显示选择
+             output logic [6:0] segments0,segments1,segments2,segments3,segments4,segments5,
+				 output logic [5:0] leds);
+
+logic [3:0] y0,y1,y2,y3,y4,y5;
+logic [3:0] d [5:0][1:0];
+logic [4:0] a,a1,a_b;
+//商品价格运算
+Algo Algo0(leds,a);
+
+//商品显示
+leds leds0(d[0][0],commodity[0],leds[0]);
+leds leds1(d[1][0],commodity[1],leds[1]);
+leds leds2(d[2][0],commodity[2],leds[2]);
+leds leds3(d[3][0],commodity[3],leds[3]);
+leds leds4(d[4][0],commodity[4],leds[4]);
+leds leds5(d[5][0],commodity[5],leds[5]);

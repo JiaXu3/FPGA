@@ -1,0 +1,277 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "segments0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segments0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segments0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segments0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segments0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segments0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segments0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segments1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segments1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segments1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segments1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segments1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segments1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segments1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segments2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segments2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segments2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segments2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segments2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segments2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segments2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segments3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segments3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segments3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segments3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segments3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segments3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segments3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segments4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segments4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segments4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segments4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segments4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segments4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segments4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "segments5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "segments5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "segments5[2]",
+					"strict" : false
+				},
+				{
+					"name" : "segments5[3]",
+					"strict" : false
+				},
+				{
+					"name" : "segments5[4]",
+					"strict" : false
+				},
+				{
+					"name" : "segments5[5]",
+					"strict" : false
+				},
+				{
+					"name" : "segments5[6]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[0]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[2]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[3]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[4]",
+					"strict" : false
+				},
+				{
+					"name" : "leds[5]",
+					"strict" : false
+				},
+				{
+					"name" : "s",
+					"strict" : false
+				},
+				{
+					"name" : "commodity[2]",
+					"strict" : false
+				},
+				{
+					"name" : "commodity[5]",
+					"strict" : false
+				},
+				{
+					"name" : "commodity[0]",
+					"strict" : false
+				},
+				{
+					"name" : "commodity[3]",
+					"strict" : false
+				},
+				{
+					"name" : "commodity[4]",
+					"strict" : false
+				},
+				{
+					"name" : "commodity[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ok",
+					"strict" : false
+				},
+				{
+					"name" : "reset[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reset[2]",
+					"strict" : false
+				},
+				{
+					"name" : "reset[5]",
+					"strict" : false
+				},
+				{
+					"name" : "reset[3]",
+					"strict" : false
+				},
+				{
+					"name" : "reset[4]",
+					"strict" : false
+				},
+				{
+					"name" : "reset[1]",
+					"strict" : false
+				},
+				{
+					"name" : "reset1",
+					"strict" : false
+				},
+				{
+					"name" : "rmb10",
+					"strict" : false
+				},
+				{
+					"name" : "rmb1",
+					"strict" : false
+				},
+				{
+					"name" : "rmb5",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

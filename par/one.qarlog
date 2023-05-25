@@ -1,0 +1,18 @@
+Quartus Prime Archive log --	C:/Verilog/one/par/one.qarlog
+
+Archive:	C:/Verilog/one/par/one.qar
+Date:		Sat Apr 08 13:01:05 2023
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Verilog/one/par/one.qpf
+C:/Verilog/one/par/one.qsf
+C:/Verilog/one/rtl/VMachine.sv
+C:/Verilog/one/rtl/VMachine_top.sv
+C:/Verilog/one/rtl/manage.sv
+C:/Verilog/one/rtl/one.sv
+d:/quartus/quartus/bin64/assignment_defaults.qdf
+	======= Total: 7 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

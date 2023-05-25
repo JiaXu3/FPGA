@@ -1,0 +1,184 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2020  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+# Date created = 15:44:19  March 09, 2023
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		one_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29I7
+set_global_assignment -name TOP_LEVEL_ENTITY test1
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:44:19  MARCH 09, 2023"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 780
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_Y2 -to clk
+set_instance_assignment -name IO_STANDARD "2.5 V" -to change[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to change[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to change[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to change[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to change[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to change[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to change[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to choice[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to choice[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to choice[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to led[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to led[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to led[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ok
+set_instance_assignment -name IO_STANDARD "2.5 V" -to rmb1
+set_instance_assignment -name IO_STANDARD "2.5 V" -to sevenconsume[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to sevenconsume[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to sevenconsume[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to sevenconsume[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to sevenconsume[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to sevenconsume[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to sevenconsume[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to sevenrmb1[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to sevenrmb1[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to sevenrmb1[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to sevenrmb1[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to sevenrmb1[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to sevenrmb1[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to sevenrmb1[0]
+set_location_assignment PIN_H22 -to segments0[6]
+set_location_assignment PIN_J22 -to segments0[5]
+set_location_assignment PIN_L25 -to segments0[4]
+set_location_assignment PIN_L26 -to segments0[3]
+set_location_assignment PIN_E17 -to segments0[2]
+set_location_assignment PIN_F22 -to segments0[1]
+set_location_assignment PIN_G18 -to segments0[0]
+set_location_assignment PIN_U24 -to segments1[6]
+set_location_assignment PIN_U23 -to segments1[5]
+set_location_assignment PIN_W25 -to segments1[4]
+set_location_assignment PIN_W22 -to segments1[3]
+set_location_assignment PIN_W21 -to segments1[2]
+set_location_assignment PIN_Y22 -to segments1[1]
+set_location_assignment PIN_M24 -to segments1[0]
+set_location_assignment PIN_Y23 -to s
+set_location_assignment PIN_Y24 -to commodity[5]
+set_location_assignment PIN_AA22 -to commodity[4]
+set_location_assignment PIN_AA23 -to commodity[3]
+set_location_assignment PIN_AA24 -to commodity[2]
+set_location_assignment PIN_AB23 -to commodity[1]
+set_location_assignment PIN_AB24 -to commodity[0]
+set_location_assignment PIN_AB28 -to reset[0]
+set_location_assignment PIN_AC28 -to reset[1]
+set_location_assignment PIN_AC27 -to reset[2]
+set_location_assignment PIN_AD27 -to reset[3]
+set_location_assignment PIN_AB27 -to reset[4]
+set_location_assignment PIN_AC26 -to reset[5]
+set_location_assignment PIN_M21 -to ok
+set_location_assignment PIN_AE18 -to segments2[6]
+set_location_assignment PIN_AF19 -to segments2[5]
+set_location_assignment PIN_AE19 -to segments2[4]
+set_location_assignment PIN_AH21 -to segments2[3]
+set_location_assignment PIN_AG21 -to segments2[2]
+set_location_assignment PIN_AA19 -to segments2[1]
+set_location_assignment PIN_AB19 -to segments2[0]
+set_location_assignment PIN_AH18 -to segments3[6]
+set_location_assignment PIN_AF18 -to segments3[5]
+set_location_assignment PIN_AG19 -to segments3[4]
+set_location_assignment PIN_AH19 -to segments3[3]
+set_location_assignment PIN_AB18 -to segments3[2]
+set_location_assignment PIN_AC18 -to segments3[1]
+set_location_assignment PIN_AD18 -to segments3[0]
+set_location_assignment PIN_AC17 -to segments4[6]
+set_location_assignment PIN_AA15 -to segments4[5]
+set_location_assignment PIN_AB15 -to segments4[4]
+set_location_assignment PIN_AB17 -to segments4[3]
+set_location_assignment PIN_AA16 -to segments4[2]
+set_location_assignment PIN_AB16 -to segments4[1]
+set_location_assignment PIN_AA17 -to segments4[0]
+set_location_assignment PIN_AD17 -to segments5[0]
+set_location_assignment PIN_AE17 -to segments5[1]
+set_location_assignment PIN_AG17 -to segments5[2]
+set_location_assignment PIN_AH17 -to segments5[3]
+set_location_assignment PIN_AF17 -to segments5[4]
+set_location_assignment PIN_AG18 -to segments5[5]
+set_location_assignment PIN_AA14 -to segments5[6]
+set_location_assignment PIN_AD26 -to rmb1
+set_location_assignment PIN_AB26 -to rmb5
+set_location_assignment PIN_AC25 -to rmb10
+set_location_assignment PIN_AB25 -to reset1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
+set_location_assignment PIN_H16 -to leds[0]
+set_location_assignment PIN_J16 -to leds[1]
+set_location_assignment PIN_H17 -to leds[2]
+set_location_assignment PIN_F15 -to leds[3]
+set_location_assignment PIN_G15 -to leds[4]
+set_location_assignment PIN_G16 -to leds[5]
+set_global_assignment -name SYSTEMVERILOG_FILE ../rtl/test1.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../rtl/sub_ok.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../rtl/decoder5_4_4.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../rtl/mus2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../rtl/sevenseg.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../rtl/Alog.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../rtl/sub_rmb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../rtl/money.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ../rtl/money1.sv
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/Waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
+set_global_assignment -name SYSTEMVERILOG_FILE ../rtl/leds.sv
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_G19 -to outcommodity[0]
+set_location_assignment PIN_F19 -to outcommodity[1]
+set_location_assignment PIN_E19 -to outcommodity[2]
+set_location_assignment PIN_F21 -to outcommodity[3]
+set_location_assignment PIN_F18 -to outcommodity[4]
+set_location_assignment PIN_E18 -to outcommodity[5]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

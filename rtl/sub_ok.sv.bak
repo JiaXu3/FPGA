@@ -1,0 +1,10 @@
+module sub(input logic commodity
+           input logic key
+			  output logic [3:0] d0);
+logic [3:0] sum;
+always_ff@(posedge key or posedge reset) begin
+    if(reset)
+	 d0 <= 10;
+	 else if(commodity)
+	 d0 = d0 - 1'b1;
+end

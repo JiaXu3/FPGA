@@ -1,0 +1,26 @@
+Quartus Prime Archive log --	C:/Verilog/one/par/one2.qarlog
+
+Archive:	C:/Verilog/one/par/one2.qar
+Date:		Sun May 21 20:47:20 2023
+Quartus Prime		20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Verilog/one/par/Waveform1.vwf
+C:/Verilog/one/par/one.qpf
+C:/Verilog/one/par/one.qsf
+C:/Verilog/one/par/simulation/Waveform.vwf
+C:/Verilog/one/rtl/Alog.sv
+C:/Verilog/one/rtl/decoder5_4_4.sv
+C:/Verilog/one/rtl/leds.sv
+C:/Verilog/one/rtl/money.sv
+C:/Verilog/one/rtl/money1.sv
+C:/Verilog/one/rtl/mus2.sv
+C:/Verilog/one/rtl/sevenseg.sv
+C:/Verilog/one/rtl/sub_ok.sv
+C:/Verilog/one/rtl/sub_rmb.sv
+C:/Verilog/one/rtl/test1.sv
+d:/quartus/quartus/bin64/assignment_defaults.qdf
+	======= Total: 15 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

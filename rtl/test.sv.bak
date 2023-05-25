@@ -1,0 +1,18 @@
+moduule test(input logic [4:0] a,
+             input logic [3:0] d0,d1,
+				 input logic s,
+				 output logic [7:0] segments0,segments1,);
+logic [3:0] y0,y1; //译码器输入,2选1输出
+logic [3:0] d1_0,d1_1;  //case输出,2选1输入
+
+//实例化case
+decoder5_4_4 decoder0(a,d1_0,d1_1);
+//实例化2选1
+mux2 mux0(d0,d1_0,s,y0);
+mux2 mux1(d1,d1_1,s,y0);
+//实例化3_8译码器
+sevenseg sevenseg0(y0,segments0);
+sevenseg sevenseg1(y1,segments1);
+
+
+endmodule
